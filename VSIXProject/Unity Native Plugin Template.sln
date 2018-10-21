@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Unity Native Plugin Template", "Unity Native Plugin Template\Unity Native Plugin Template.vcxproj", "{1AA291AA-2F22-4A81-A695-5D5327E39911}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D2983014-9899-48F9-84B3-7A55B036D89B} = {D2983014-9899-48F9-84B3-7A55B036D89B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Unity Native Plugin TemplateUI", "Unity Native Plugin TemplateUi\Unity Native Plugin TemplateUi.vcxproj", "{D2983014-9899-48F9-84B3-7A55B036D89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity Native Plugin TemplateVSIX", "Unity Native Plugin Template\Unity Native Plugin TemplateVSIX\Unity Native Plugin TemplateVSIX.csproj", "{353AB25E-D53B-4577-A8E5-27C09175FBC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AA291AA-2F22-4A81-A695-5D5327E39911}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{1AA291AA-2F22-4A81-A695-5D5327E39911}.Debug|x86.ActiveCfg = Debug|Win32
+		{1AA291AA-2F22-4A81-A695-5D5327E39911}.Debug|x86.Build.0 = Debug|Win32
+		{1AA291AA-2F22-4A81-A695-5D5327E39911}.Release|Any CPU.ActiveCfg = Release|Win32
+		{1AA291AA-2F22-4A81-A695-5D5327E39911}.Release|x86.ActiveCfg = Release|Win32
+		{1AA291AA-2F22-4A81-A695-5D5327E39911}.Release|x86.Build.0 = Release|Win32
+		{D2983014-9899-48F9-84B3-7A55B036D89B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D2983014-9899-48F9-84B3-7A55B036D89B}.Debug|x86.ActiveCfg = Debug|Win32
+		{D2983014-9899-48F9-84B3-7A55B036D89B}.Debug|x86.Build.0 = Debug|Win32
+		{D2983014-9899-48F9-84B3-7A55B036D89B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D2983014-9899-48F9-84B3-7A55B036D89B}.Release|x86.ActiveCfg = Release|Win32
+		{D2983014-9899-48F9-84B3-7A55B036D89B}.Release|x86.Build.0 = Release|Win32
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Debug|x86.Build.0 = Debug|Any CPU
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Release|x86.ActiveCfg = Release|Any CPU
+		{353AB25E-D53B-4577-A8E5-27C09175FBC4}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83267165-8138-4305-976B-A2EEFC74A284}
+	EndGlobalSection
+EndGlobal

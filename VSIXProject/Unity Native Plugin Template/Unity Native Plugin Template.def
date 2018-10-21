@@ -1,0 +1,7 @@
+﻿; Unity Native Plugin Template.def : Declares the module parameters.
+
+LIBRARY      "Unity Native Plugin Template.DLL"
+
+EXPORTS
+	DllCanUnloadNow            PRIVATE
+	DllGetClassObject          PRIVATE
