@@ -1,0 +1,6 @@
+﻿**/.vs
+/VSIXProject/**/Debug
+/VSIXProject/**/Release
+/VSIXProject/**/obj
+/VSIXProject/**/bin
+/VSIXProject/**/*.vcxproj.user
