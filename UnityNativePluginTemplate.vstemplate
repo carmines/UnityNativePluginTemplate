@@ -1,0 +1,19 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Unity Native Plugin Template</Name>
+    <Description>Project template for Unity c++ plugin based on cppwinrt that targets both Win32 deskto/Unity Editor and UWP applications.</Description>
+    <Icon>Icon.ico</Icon>
+    <ProjectType>VC</ProjectType>
+    <CreateNewFolder>true</CreateNewFolder>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="UnitySample" CopyParameters="true">Unity\Unity.vstemplate</ProjectTemplateLink>
+      <SolutionFolder Name="Source" CreateOnDisk="true">
+        <ProjectTemplateLink ProjectName="Shared" CopyParameters="true">Shared\Shared.vstemplate</ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="UWP" CopyParameters="true">UWP\UWP.vstemplate</ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="Win32" CopyParameters="true">Win32\Win32.vstemplate</ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

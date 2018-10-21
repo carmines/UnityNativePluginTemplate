@@ -1,0 +1,70 @@
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>UnitySample</Name>
+    <ProjectType>VC</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>UnitySample</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Icon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project ReplaceParameters="true" TargetFileName="UnitySample.vcxproj" File="Unity.vcxproj">
+      <ProjectItem ReplaceParameters="true" TargetFileName="UnitySample.vcxproj.filters">Unity.vcxproj.filters</ProjectItem>
+      <ProjectItem TargetFileName="readme.txt">readme.txt</ProjectItem>
+      <Folder TargetFolderName="$ext_projectname$App" Name="NativePluginApp">
+        <Folder TargetFolderName="Assets" Name="Assets">
+          <ProjectItem ReplaceParameters="false" TargetFileName="$ext_projectname$.meta">NativePlugin.meta</ProjectItem>
+          <Folder TargetFolderName="$ext_projectname$" Name="NativePlugin">
+            <ProjectItem>Plugins.meta</ProjectItem>
+            <Folder Name="Plugins" TargetFolderName="Plugins">
+              <Folder Name="WSA" TargetFolderName="WSA">
+                <Folder Name="x64" TargetFolderName="x64">
+                  <ProjectItem ReplaceParameters="false" TargetFileName="$ext_projectname$.dll.meta">NativePlugin.dll.meta</ProjectItem>
+                </Folder>
+                <Folder Name="x86" TargetFolderName="x86">
+                  <ProjectItem ReplaceParameters="false" TargetFileName="$ext_projectname$.dll.meta">NativePlugin.dll.meta</ProjectItem>
+                </Folder>
+              </Folder>
+              <Folder Name="x64" TargetFolderName="x64">
+                <ProjectItem ReplaceParameters="false" TargetFileName="$ext_projectname$.dll.meta">NativePlugin.dll.meta</ProjectItem>
+              </Folder>
+              <Folder Name="x86" TargetFolderName="x86">
+                <ProjectItem ReplaceParameters="false" TargetFileName="$ext_projectname$.dll.meta">NativePlugin.dll.meta</ProjectItem>
+              </Folder>
+            </Folder>
+            <ProjectItem>Scripts.meta</ProjectItem>
+            <Folder TargetFolderName="Scripts" Name="Scripts">
+              <ProjectItem>BasePlugin.cs.meta</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="BasePlugin.cs">BasePlugin.cs</ProjectItem>
+              <ProjectItem>Mesh.cs.meta</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="Mesh.cs">Mesh.cs</ProjectItem>
+            </Folder>
+          </Folder>
+          <ProjectItem>Materials.meta</ProjectItem>
+          <Folder Name="Materials" TargetFolderName="Materials">
+            <ProjectItem ReplaceParameters="false" TargetFileName="VertexColor.mat">VertexColor.mat</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="VertexColor.mat.meta">VertexColor.mat.meta</ProjectItem>
+          </Folder>
+          <ProjectItem>Scenes.meta</ProjectItem>
+          <Folder Name="Scenes" TargetFolderName="Scenes">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Sample.unity">Sample.unity</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Sample.unity.meta">Sample.unity.meta</ProjectItem>
+          </Folder>
+          <ProjectItem>Scripts.meta</ProjectItem>
+          <Folder Name="Scripts" TargetFolderName="Scripts">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Spin.cs">Spin.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Spin.cs.meta">Spin.cs.meta</ProjectItem>
+          </Folder>
+          <ProjectItem>Shaders.meta</ProjectItem>
+          <Folder Name="Shaders" TargetFolderName="Shaders">
+            <ProjectItem ReplaceParameters="false" TargetFileName="VertexColor.shader">VertexColor.shader</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="VertexColor.shader.meta">VertexColor.shader.meta</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

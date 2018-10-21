@@ -1,0 +1,41 @@
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Shared</Name>
+    <ProjectType>VC</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Shared</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Icon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project ReplaceParameters="true" TargetFileName="Source\$projectname$.vcxitems" File="Shared.vcxitems">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.vcxitems.filters">Shared.vcxitems.filters</ProjectItem>
+      <Folder TargetFolderName="Unity" Name="Unity">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnityGraphics.h">IUnityGraphics.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnityGraphicsD3D9.h">IUnityGraphicsD3D9.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnityGraphicsD3D11.h">IUnityGraphicsD3D11.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnityGraphicsD3D12.h">IUnityGraphicsD3D12.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnityGraphicsMetal.h">IUnityGraphicsMetal.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnityInterface.h">IUnityInterface.h</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="pch.cpp">pch.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="pch.h">pch.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PlatformBase.h">PlatformBase.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="UnityDeviceResource.cpp">UnityDeviceResource.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="UnityDeviceResource.h">UnityDeviceResource.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectname$_Dll.cpp">NativePlugin.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectname$_Dll.def">NativePlugin.def</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="D3D11DeviceResources.cpp">D3D11DeviceResources.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="D3D11DeviceResources.h">D3D11DeviceResources.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.Module.cpp">Plugin.Module.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.Module.h">Plugin.Module.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.Module.idl">Plugin.Module.idl</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.Mesh.cpp">Plugin.Mesh.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.Mesh.h">Plugin.Mesh.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.Mesh.idl">Plugin.Mesh.idl</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

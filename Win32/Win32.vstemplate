@@ -1,0 +1,19 @@
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Win32</Name>
+    <ProjectType>VC</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Win32</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Icon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project ReplaceParameters="true" TargetFileName="Source\$projectname$.vcxproj" File="Win32.vcxproj">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.vcxproj.filters">Win32.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="dllmain.cpp">dllmain.cpp</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
